@@ -1,0 +1,18 @@
+table{
+    border: 1px solid black;
+  margin-inline: auto;
+}
+footer{
+    background-color: bisque;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    height: 80vh;
+}
+.mapContainer {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
