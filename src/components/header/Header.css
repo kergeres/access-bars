@@ -1,0 +1,19 @@
+
+header {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style: none;gap: 30px; border: 1px solid black;
+    width: 300px;
+}
+div 
+{
+    border: 1px solid black;
+}
+li {
+gap: 30px;
+}

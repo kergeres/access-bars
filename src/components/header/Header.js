@@ -4,7 +4,12 @@ const Header = () => {
 
     return (
         <header className={classes.Header}>
-            header vagyok
+            <div>logo</div>
+            <ul>
+                <li>egy</li>
+                <li>ket</li>
+                <li>ha</li>
+            </ul>
         </header>
     )
 
