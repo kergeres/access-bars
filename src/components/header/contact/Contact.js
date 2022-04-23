@@ -3,9 +3,9 @@ import classes from './Contact.css'
 const Contact = () => {
 
     return (
-        <footer>
+        <footer id="contact" >
             <div className="twoDivA">
-                <table>
+                <table id="contactTable">
                     <tbody>
 
                         <tr>

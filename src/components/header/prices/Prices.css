@@ -1,0 +1,31 @@
+#pricesContainer{
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 20px;
+}
+
+#pricesTable {
+   margin-top: 50px;
+margin-inline: auto;
+    width: 80%;
+    /* border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 10px 0; */
+}
+
+#pricesTable td
+{
+    /* border: 1px solid black; */
+    width: 6rem;
+    
+}
+
+#pricesTable td:nth-child(even)
+{
+    text-align: end;
+}
+#pricesTable td:nth-child(odd)
+{
+    text-align: start;
+    margin-right: 200px;
+}

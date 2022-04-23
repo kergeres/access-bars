@@ -1,0 +1,7 @@
+#AppointmentIFrame { 
+    width: 80%;
+    height: 700px;
+    overflow: hidden;
+   /* scroll-padding-inline: ; */
+}
+

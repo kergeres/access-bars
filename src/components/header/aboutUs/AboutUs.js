@@ -3,7 +3,7 @@ import classes from './AboutUs.css'
 const AboutUs = () => {
 
     return (
-        <section>
+        <section id="aboutUs">
             <div className="infoContainer">
                 <h2>Egyes szoveg</h2>
                 <hr></hr>

@@ -1,9 +1,11 @@
 import React from "react";
+import classes from './Landing.css'
 
 const Landing = () => {
 
+
     return (
-        <h3>land</h3>
+        <div id="landing" ></div>
     )
 }
 
