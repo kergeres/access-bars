@@ -15,8 +15,8 @@ function App() {
       <Header />
       <Landing />
       <AboutUs />
-      <Prices />
       <Appointment />
+      <Prices />
       <Contact />
 
 

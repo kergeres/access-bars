@@ -5,27 +5,33 @@
 }
 
 #pricesTable {
-   margin-top: 50px;
-margin-inline: auto;
+    margin-top: 50px;
+    margin-inline: auto;
     width: 80%;
-    /* border: 1px solid black;
-    border-collapse: separate;
+    border: 1px solid black;
+    /* border-collapse: separate;
     border-spacing: 10px 0; */
+  
 }
-
+#pricesTable tr {
+    display: flex;
+}
 #pricesTable td
 {
     /* border: 1px solid black; */
-    width: 6rem;
-    
+   /* width: 100%; */
+
+  
 }
 
 #pricesTable td:nth-child(even)
 {
+    width: 60%;
     text-align: end;
 }
 #pricesTable td:nth-child(odd)
 {
     text-align: start;
-    margin-right: 200px;
+    width: 40%;
+    /* margin-right: 200px; */
 }

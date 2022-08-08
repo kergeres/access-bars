@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(69, 69, 69);
+    /* background-color: rgb(69, 69, 69); */
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
@@ -7,14 +7,22 @@ html {
 h2
 {
     font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #282828;
 }h3
 {
     font-size: 24px;
     text-align: center;
+    font-weight: normal;
+    color: #282828;
    
 }
 
 section
 {
-    min-height: 100vh;
+    min-height: 90vh;
+    width: 70%;
+    /* border: 1px solid black; */
+    margin-inline: auto;
 }

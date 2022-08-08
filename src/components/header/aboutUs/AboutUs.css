@@ -1,9 +1,8 @@
-section {
-    width: 80%;
-    /* border: 1px solid black; */
-    margin-inline: auto;
-}
+
 .infoContainer {
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-block: 100px;
+}
+.infoContainer p {
+    line-height: 24px;
 }

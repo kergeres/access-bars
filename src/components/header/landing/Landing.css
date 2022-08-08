@@ -5,6 +5,13 @@
     /* animation: landBgChanger 100s infinite; */
      background-image: url('../../../img/landing-img/nature-bg1.jpg');
 }
+.landingContainer{
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 @keyframes landBgChanger {
 

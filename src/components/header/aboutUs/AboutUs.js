@@ -1,11 +1,11 @@
 import React from "react"
 import classes from './AboutUs.css'
 const AboutUs = () => {
-
+    console.log('d')
     return (
         <section id="aboutUs">
             <div className="infoContainer">
-                <h2>Egyes szoveg</h2>
+                <h2>Mi az Access Bars?</h2>
                 <hr></hr>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus autem, quis ea deserunt quod beatae molestias harum, quo eaque numquam nam soluta, aliquam iusto excepturi! Porro placeat quaerat rerum maiores?
                     Ab earum dolorem blanditiis atque minima excepturi, delectus non minus consectetur laborum officia adipisci, explicabo voluptates. Aperiam officia asperiores cum minima ratione labore repellat, ipsum ab magnam adipisci veniam dolorum!
@@ -13,7 +13,8 @@ const AboutUs = () => {
                     Nulla reprehenderit, doloremque voluptates explicabo quia, maxime minima aut dolorem harum sed accusantium id. Ipsum numquam quis et consequatur pariatur quia voluptates officiis. Quae possimus soluta quam sint officiis nobis.
                 </p>
             </div>
-            <div className="infoContainer"><h2>kettes szoveg</h2>
+            <div className="infoContainer">
+                <h2>Hogy néz ki egy kezelés?</h2>
 
                 <hr></hr>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus autem, quis ea deserunt quod beatae molestias harum, quo eaque numquam nam soluta, aliquam iusto excepturi! Porro placeat quaerat rerum maiores?

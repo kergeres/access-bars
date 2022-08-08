@@ -5,7 +5,7 @@ const Prices = () => {
 
     return (
         <section id="pricesContainer">
-            <h3>árlista</h3>
+            <h3>Árlista</h3>
             <table id="pricesTable">
                 <tr>
                     <td>felnott rovid</td>

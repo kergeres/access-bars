@@ -5,12 +5,14 @@ header {
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    text-transform: uppercase;
+    z-index: 4;
 }
 
 #hederUl {
     display: flex;
     list-style: none;gap: 30px; 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     min-width: 300px;
     margin-right: 20px;
 }
@@ -28,4 +30,9 @@ gap: 30px;
 #hederUl a {
     text-decoration: none;
     
+}
+
+.logo{
+    height: 80px;
+    margin: 5px;
 }
