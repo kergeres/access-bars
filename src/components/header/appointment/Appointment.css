@@ -1,20 +1,41 @@
-
-.appointmentSh{
-    width: 80%;
-    display: block;
-    margin: 35px auto 10px auto;
-filter: grayscale(70%);
-box-shadow: 1px 1px 11px 1px gray;
+.appointmentSh {
+  width: 80%;
+  display: block;
+  margin: 35px auto 10px auto;
+  filter: grayscale(70%);
+  box-shadow: 1px 1px 11px 1px gray;
+}
+#appointment {
+  background-color: bisque;
+  width: 100%;
+  padding-top: 50px;
 }
 
-#appointment p{
-    /* border: 1px solid black; */
-    width: 60%;
-    margin-inline: auto;
-    text-align: center;
+#appointment p {
+  /* border: 1px solid black; */
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
 }
+
 .bookAppointment {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  /* border: 1px solid black; */
+  width: 170px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 480px) {
+  #appointment p {
+    width: 40%;
+  }
+  .bookAppointment {
     left: 50%;
+
     transform: translateX(-50%);
     position: absolute;
+  }
 }

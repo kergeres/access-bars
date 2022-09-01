@@ -1,28 +1,34 @@
 html {
-    /* background-color: rgb(69, 69, 69); */
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
+  /* background-color: rgb(69, 69, 69); */
+  font-family: "Open-Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
-h2
-{
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: normal;
-    color: #282828;
-}h3
-{
-    font-size: 24px;
-    text-align: center;
-    font-weight: normal;
-    color: #282828;
-   
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: #282828;
+}
+h3 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: normal;
+  color: #282828;
 }
 
-section
-{
-    min-height: 90vh;
-    width: 70%;
-    /* border: 1px solid black; */
-    margin-inline: auto;
+section {
+  min-height: 40vh;
+  width: 86%;
+  margin-inline: auto;
+  text-align: justify;
+}
+section:last-child {
+  padding-bottom: 500px;
+}
+@media screen and (min-width: 780px) {
+  section {
+    min-height: 50vh;
+    width: 65%;
+  }
 }

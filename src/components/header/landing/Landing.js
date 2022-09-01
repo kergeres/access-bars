@@ -1,4 +1,5 @@
-import React, { Fragment } from "react";
+import { Typography } from '@mui/material'
+import React from 'react'
 import classes from './Landing.css'
 
 const Landing = () => {
@@ -7,7 +8,7 @@ const Landing = () => {
     return (
         <div id="landing">
             <div className="landingContainer">
-                <h1>acces bars szoveg</h1>
+                <Typography sx={{ color: 'white', fontWeight: 600 }} variant='h1' >access bars</Typography>
             </div>
         </div>
     )

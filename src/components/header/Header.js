@@ -15,15 +15,23 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['Mi az access bars', 'Kezelések', 'Időpontok', 'árak', 'elérhetőség'];
 
-//   <div id="logo"><a href="#landing" ><img className="logo" src="http://eletoromszabadsag.hu/wp-content/uploads/2019/04/accesbars500.png" /></a></div>
-//             <ul id="hederUl">
-//                 <li><a href="#aboutUs" >Bemutatkozás</a> </li>
-//                 <li><a href="#appointment" >időpontfoglalás</a> </li>
-//                 <li><a href="#pricesContainer" >árak</a> </li>
-//                 <li><a href="#contact" >Elérhetőség</a> </li>
-//             </ul>
+const navItemStyl = {
+    color: 'black',
+    fontFamily: 'Karla',
+    textTransform: 'lowercase',
+    padding: 7,
+    cursor: 'pointer',
+    hover: {
+        textTransform: "uppercase",
+        color: 'red',
+
+    },
+    "&:hover": {
+        color: "red",
+    }
+}
 
 function DrawerAppBar(props) {
     const { window } = props;
@@ -35,41 +43,43 @@ function DrawerAppBar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <div id="logo"><a href="#landing" ><img className="logo" src="http://eletoromszabadsag.hu/wp-content/uploads/2019/04/accesbars500.png" /></a></div>
-            <Divider />
             <List>
                 {navItems.map((item) => (
                     <ListItem key={item} disablePadding>
                         <ListItemButton sx={{ textAlign: 'center' }}>
-                            <ListItemText primary={item} />
+                            <ListItemText sx={{ fontFamily: 'Karla', textTransform: 'lowercase' }} primary={item} />
                         </ListItemButton>
                     </ListItem>
                 ))}
             </List>
+            <Box id="logo"><img style={{ width: '50%', padding: "10px", position: 'absolute', bottom: '5%', right: '50%', transform: 'translatex(50%)' }} src={require('../../img/logo.png')} /></Box>
+
         </Box>
     );
 
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box sx={{ display: 'flex' }}>
-            <AppBar component="nav">
-                <Toolbar>
+        <Box sx={{ display: 'flex', backgroundColor: 'red' }}>
+            <AppBar sx={{ backgroundColor: { xs: 'transparent', sm: "#fcf1de" }, boxShadow: { xs: 'none', sm: '0px 2px 4px -1px rgb(0 0 0 / 20%)' } }} component="nav">
+                <Toolbar sx={{ right: '0px', justifyContent: 'space-between' }}>
+
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' } }}
+                        sx={{ mr: 2, display: { sm: 'none' }, color: 'black' }}
                     >
                         <MenuIcon />
                     </IconButton>
-                    <div id="logo"><a href="#landing" ><img className="logo" src="http://eletoromszabadsag.hu/wp-content/uploads/2019/04/accesbars500.png" /></a></div>
-                    <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                    <Box sx={{ display: { xs: 'none', sm: 'block' } }} id="logo"><a href="#landing" ><img style={{ height: '80px', padding: '10px' }} className="logo" src={require('../../img/logo.png')} /></a></Box>
+
+                    <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
                         {navItems.map((item) => (
-                            <Button key={item} sx={{ color: '#fff' }}>
+                            <Typography variant="body2" style={navItemStyl} key={item} >
                                 {item}
-                            </Button>
+                            </Typography>
                         ))}
                     </Box>
                 </Toolbar>

@@ -1,7 +1,6 @@
 import React from "react"
 import classes from './AboutUs.css'
 const AboutUs = () => {
-    console.log('d')
     return (
         <section id="aboutUs">
             <div className="infoContainer">

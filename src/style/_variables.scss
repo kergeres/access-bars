@@ -1,0 +1,13 @@
+// colors
+$mainColor: #1976d2;
+$mainColosr: #9ab8d6;
+$headerColor: $mainColor;
+
+// fonts
+// $sansSeriff: "Roboto", sans-serif;
+// $seriff: "Roboto Slab", serif;
+
+:export {
+  maincolor: $mainColor;
+  headercolor: $headerColor;
+}
