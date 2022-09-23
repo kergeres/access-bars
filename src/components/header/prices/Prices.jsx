@@ -3,41 +3,41 @@ import classes from "./Prices.css";
 
 const Prices = () => {
   return (
-    <section id="pricesContainer">
+    <section id="árak">
       <h3>Árlista</h3>
       <table id="pricesTable">
         <tbody>
           <tr>
-            <td>fdfd</td>
-            <td>20.000.-</td>
+            <td>Access Bars kezelés (60 perc)</td>
+            <td>15.000.-</td>
           </tr>
           <tr>
-            <td>felnott rovid</td>
-            <td>20.000.-</td>
+            <td>Access Bars kezelés (120 perc)</td>
+            <td>28.000.-</td>
           </tr>
           <tr>
-            <td>felnott rovid 3 alkalom</td>
-            <td>20.000.-</td>
+            <td>Access Bars gyermek kezelés (60 perc)</td>
+            <td>13.000.-</td>
           </tr>
           <tr>
-            <td>felnott hosszu 3 alkalom</td>
-            <td>20.000.-</td>
+            <td>Access Bars gyermek kezelés (120 perc)</td>
+            <td>25.000.-</td>
           </tr>
           <tr>
-            <td>gyermek rovid</td>
-            <td>20.000.-</td>
+            <td>Access Bars kezelés 3 alkalom (60 perc)</td>
+            <td>43.000.-</td>
           </tr>
           <tr>
-            <td>gyermek hosszu</td>
-            <td>20.000.-</td>
+            <td>Access Bars kezelés 3 alkalom (120 perc)</td>
+            <td>80.000.-</td>
           </tr>
           <tr>
-            <td>gyermek rovid 3 alkalom</td>
-            <td>20.000.-</td>
+            <td>Access Bars gyermek kezelés 3 alkalom (60 perc)</td>
+            <td>37.000.-</td>
           </tr>
           <tr>
-            <td>gyermek hosszu 3 alkalom</td>
-            <td>20.000.-</td>
+            <td>Access Bars gyermek kezelés 3 alkalom (120 perc)</td>
+            <td>72.000.-</td>
           </tr>
         </tbody>
       </table>

@@ -1,3 +1,11 @@
+::-moz-selection {
+  background: #f2d7a9;
+}
+
+::selection {
+  background: #f2d7a9;
+}
+
 html {
   /* background-color: rgb(69, 69, 69); */
   font-family: "Open-Sans", sans-serif;
@@ -26,9 +34,28 @@ section {
 section:last-child {
   padding-bottom: 500px;
 }
+
 @media screen and (min-width: 780px) {
   section {
     min-height: 50vh;
     width: 65%;
+  }
+  section::before {
+    content: "";
+    display: block;
+    height: 20px;
+    margin: -80px 0 0;
+  }
+  #időpontok::before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: -30px 0 0;
+  }
+  #árak::before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: -30px 0 0;
   }
 }

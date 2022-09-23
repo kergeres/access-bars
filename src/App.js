@@ -6,23 +6,20 @@ import Contact from './components/header/contact/Contact';
 import AboutUs from './components/header/aboutUs/AboutUs';
 import Landing from './components/header/landing/Landing';
 import Prices from './components/header/prices/Prices';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-
-    <div className="App">
-
-      <Header />
-      <Landing />
-      <AboutUs />
-      <Appointment />
-      <Prices />
-      <Contact />
-
-
-
-
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Landing />
+        <AboutUs />
+        <Appointment />
+        <Prices />
+        <Contact />
+      </div>
+    </Router>
 
   );
 }

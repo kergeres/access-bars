@@ -1,117 +1,163 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import * as React from "react";
+import PropTypes from "prop-types";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import MenuIcon from "@mui/icons-material/Menu";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import { HashLink as Link } from "react-router-hash-link";
 
 const drawerWidth = 240;
-const navItems = ['Mi az access bars', 'Kezelések', 'Időpontok', 'árak', 'elérhetőség'];
+const navItems = [
+  "mi az access bars",
+  "gyerekeknek",
+  "időpontok",
+  "árak",
+  "elérhetőség",
+];
 
 const navItemStyl = {
-    color: 'black',
-    fontFamily: 'Karla',
-    textTransform: 'lowercase',
-    padding: 7,
-    cursor: 'pointer',
-    hover: {
-        textTransform: "uppercase",
-        color: 'red',
-
-    },
-    "&:hover": {
-        color: "red",
-    }
-}
+  color: "black",
+  fontFamily: "Karla",
+  textTransform: "lowercase",
+  padding: 7,
+  cursor: "pointer",
+};
 
 function DrawerAppBar(props) {
-    const { window } = props;
-    const [mobileOpen, setMobileOpen] = React.useState(false);
+  const { window } = props;
+  const [mobileOpen, setMobileOpen] = React.useState(false);
 
-    const handleDrawerToggle = () => {
-        setMobileOpen(!mobileOpen);
-    };
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
 
-    const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <List>
-                {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
-                            <ListItemText sx={{ fontFamily: 'Karla', textTransform: 'lowercase' }} primary={item} />
-                        </ListItemButton>
-                    </ListItem>
-                ))}
-            </List>
-            <Box id="logo"><img style={{ width: '50%', padding: "10px", position: 'absolute', bottom: '5%', right: '50%', transform: 'translatex(50%)' }} src={require('../../img/logo.png')} /></Box>
+  const drawer = (
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+      <List>
+        {navItems.map((item) => (
+          <ListItem key={item} disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText
+                sx={{ fontFamily: "Karla", textTransform: "lowercase" }}
+                primary={item}
+              />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Box id="logo">
+        <img
+          style={{
+            width: "50%",
+            padding: "10px",
+            position: "absolute",
+            bottom: "5%",
+            right: "50%",
+            transform: "translatex(50%)",
+          }}
+          src={require("../../img/logo.png")}
+        />
+      </Box>
+    </Box>
+  );
 
-        </Box>
-    );
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
-    const container = window !== undefined ? () => window().document.body : undefined;
+  return (
+    <Box sx={{ display: "flex", backgroundColor: "red" }}>
+      <AppBar
+        sx={{
+          backgroundColor: { xs: "transparent", sm: "#fcf1de" },
+          boxShadow: { xs: "none", sm: "0px 2px 4px -1px rgb(0 0 0 / 20%)" },
+        }}
+        component="nav"
+      >
+        <Toolbar sx={{ right: "0px", justifyContent: "space-between" }}>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            sx={{ mr: 2, display: { sm: "none" }, color: "black" }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Box sx={{ display: { xs: "none", sm: "block" } }} id="logo">
+            <a href="#landing">
+              <img
+                style={{ height: "80px", padding: "10px" }}
+                className="logo"
+                src={require("../../img/logo.png")}
+              />
+            </a>
+          </Box>
 
-    return (
-        <Box sx={{ display: 'flex', backgroundColor: 'red' }}>
-            <AppBar sx={{ backgroundColor: { xs: 'transparent', sm: "#fcf1de" }, boxShadow: { xs: 'none', sm: '0px 2px 4px -1px rgb(0 0 0 / 20%)' } }} component="nav">
-                <Toolbar sx={{ right: '0px', justifyContent: 'space-between' }}>
-
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        edge="start"
-                        onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' }, color: 'black' }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    <Box sx={{ display: { xs: 'none', sm: 'block' } }} id="logo"><a href="#landing" ><img style={{ height: '80px', padding: '10px' }} className="logo" src={require('../../img/logo.png')} /></a></Box>
-
-                    <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
-                        {navItems.map((item) => (
-                            <Typography variant="body2" style={navItemStyl} key={item} >
-                                {item}
-                            </Typography>
-                        ))}
-                    </Box>
-                </Toolbar>
-            </AppBar>
-            <Box component="nav">
-                <Drawer
-                    container={container}
-                    variant="temporary"
-                    open={mobileOpen}
-                    onClose={handleDrawerToggle}
-                    ModalProps={{
-                        keepMounted: true, // Better open performance on mobile.
-                    }}
+          <Box sx={{ display: { xs: "none", sm: "flex" } }}>
+            {navItems.map((item) => {
+              let hashTagAdd = `#${item.replace(/ /g, "")}`;
+              return (
+                <Link to={hashTagAdd}>
+                  <Typography
+                    variant="body2"
                     sx={{
-                        display: { xs: 'block', sm: 'none' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                      borderBottom: "1px solid #fcf1de",
+                      transition: ".5s",
+                      "&:hover": {
+                        color: "red",
+                        borderBottom: "1px solid black",
+                      },
                     }}
-                >
-                    {drawer}
-                </Drawer>
-            </Box>
-
-        </Box>
-    );
+                    style={navItemStyl}
+                    key={item}
+                  >
+                    {item}
+                  </Typography>
+                </Link>
+              );
+            })}
+          </Box>
+        </Toolbar>
+      </AppBar>
+      <Box component="nav">
+        <Drawer
+          container={container}
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true, // Better open performance on mobile.
+          }}
+          sx={{
+            display: { xs: "block", sm: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
+          }}
+        >
+          {drawer}
+        </Drawer>
+      </Box>
+    </Box>
+  );
 }
 
 DrawerAppBar.propTypes = {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-    window: PropTypes.func,
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window: PropTypes.func,
 };
 
 export default DrawerAppBar;

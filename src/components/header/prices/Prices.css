@@ -1,4 +1,4 @@
-#pricesContainer {
+#árak {
   /* border: 1px solid black; */
   text-align: center;
   padding: 20px;
@@ -15,7 +15,7 @@
   display: flex;
 }
 #pricesTable td {
-  border-bottom: 1px solid rgb(76, 76, 76);
+  border-bottom: 1px solid rgb(97, 97, 97);
   margin-top: 2px;
   text-decoration: none !important;
 }
@@ -27,7 +27,8 @@
 }
 #pricesTable td:nth-child(odd) {
   text-align: start;
-  width: 40%;
+  width: 90%;
+  line-height: 22px;
   /* margin-right: 200px; */
 }
 

@@ -5,7 +5,7 @@ import img from '../../../img/AppointmentSH.jpg'
 const Appointment = () => {
 
     return (
-        <section id='appointment'>
+        <section id='időpontok'>
             <>
                 <h3>Időpontfoglalás</h3>
 
