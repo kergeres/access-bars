@@ -1,5 +1,4 @@
 #árak {
-  /* border: 1px solid black; */
   text-align: center;
   padding: 20px;
   padding-bottom: 50px;
@@ -34,7 +33,7 @@
 
 @media screen and (min-width: 780px) {
   #pricesTable {
-    width: 60%;
+    width: 90%;
     padding-bottom: 80px;
   }
   #pricesTable td {

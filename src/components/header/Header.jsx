@@ -43,16 +43,21 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText
-                sx={{ fontFamily: "Karla", textTransform: "lowercase" }}
-                primary={item}
-              />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        {navItems.map((item) => {
+          let hashTagAdd = `#${item.replace(/ /g, "")}`;
+          return (
+            <Link to={hashTagAdd}>
+              <ListItem key={item} disablePadding>
+                <ListItemButton sx={{ textAlign: "center" }}>
+                  <ListItemText
+                    sx={{ fontFamily: "Karla", textTransform: "lowercase" }}
+                    primary={item}
+                  />
+                </ListItemButton>
+              </ListItem>
+            </Link>
+          );
+        })}
       </List>
       <Box id="logo">
         <img
@@ -110,11 +115,10 @@ function DrawerAppBar(props) {
                   <Typography
                     variant="body2"
                     sx={{
-                      borderBottom: "1px solid #fcf1de",
+                      borderBottom: "1.5px solid #fcf1de",
                       transition: ".5s",
                       "&:hover": {
-                        color: "red",
-                        borderBottom: "1px solid black",
+                        borderBottom: "1.5px solid #292929",
                       },
                     }}
                     style={navItemStyl}

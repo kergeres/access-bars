@@ -114,19 +114,26 @@ const AboutUs = () => {
           <hr></hr>
 
           <p>
-            A kezelés előtti konzultáció nagyjából 20 percet vesz igénybe,
-            ezalatt a kezelő felméri, pontosan mire is van szükség. Az alkalom
-            további része vízszintes pozícióban zajlik, nagyjából egy órát vesz
-            igénybe. Ezalatt a kezelő a Bars pontokat stimulálja, többnyire a
-            fejen, de alkalmanként a karokon és a lábakon is, egy-egy pontot
-            megközelítőleg 10-15 percig, utána megy tovább. Mindez a lehető
-            legnyugodtabb környezetben történik, a háttérben zene szól, igény
-            szerint füstölő is használható. Eközben a kezelt teljesen
-            megnyugszik, meditatív állapotba kerül, sőt van olyan is, aki
-            elalszik, még más inkább beszélgetne közben, mindenre van lehetőség.
-            Természetesen bármikor megszakítható a folyamat, nem kötelező
-            kihasználni az egy órát, a lényeg, hogy jól érezzük magunkat,
-            mindenki saját igénye szerint.
+            A felnőttekhez hasonlóan, a gyerekeknek is megvannak a saját
+            problémáik. Amikor bekerülnek a közoktatásba és elszakadnak az
+            otthontól tulajdonképpen megváltozik körülöttük minden, ez pedig
+            rengeteg stresszel járhat számukra. A folyamatos megfelelési
+            kényszer és a túlzott óraszám tanulás-, magatartás- és
+            figyelemzavarhoz vezethet, nem beszélve az ennél sokkal súlyosabb
+            esetekről. Ha nem figyelünk oda gyermekünk lelki egészségére,
+            könnyen kialakulhat szorongás, illetve depresszió, ami később
+            különböző betegségekhez vezethet. Ezek elkerülésére, illetve
+            amennyiben kialakult hasonló helyzet, akkor kezelésére, kiváló
+            segítséget nyújt az Access Bars kezelés. A fiatalok, akárcsak a
+            felnőttek, lehetőséget kapnak egy kis időre megnyugodni, aminek
+            köszönhetően később is sokkal kiegyensúlyozottabbak lesznek. A
+            gondolataik lecsillapodása után könnyebben tudnak majd koncentrálni,
+            ami a mai világban különösen nagy nehézséget jelent. Ez nem csak a
+            tanulás kapcsán fontos, hiszen a fiatalok életében különösen nagy
+            szerepet játszik az önkifejezés, kreativitásukat ilyenkor tudják a
+            leginkább kibontakoztatni. A kezelések alatt a gyerekek megtanulnak
+            befelé figyelni, elengedni magukat, ezzel pedig a hétköznapjaik is
+            sokkal nyugodtabbá válnak.
           </p>
           <img
             alt="access bars kezelés"
