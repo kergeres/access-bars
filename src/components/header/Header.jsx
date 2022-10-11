@@ -2,7 +2,6 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
@@ -12,7 +11,6 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import { HashLink as Link } from "react-router-hash-link";
 
 const drawerWidth = 240;
@@ -61,6 +59,7 @@ function DrawerAppBar(props) {
       </List>
       <Box id="logo">
         <img
+          alt="acces bars Dunakeszi"
           style={{
             width: "50%",
             padding: "10px",
@@ -100,6 +99,7 @@ function DrawerAppBar(props) {
           <Box sx={{ display: { xs: "none", sm: "block" } }} id="logo">
             <a href="#landing">
               <img
+                alt="acces bars Dunakeszi"
                 style={{ height: "80px", padding: "10px" }}
                 className="logo"
                 src={require("../../img/logo.png")}

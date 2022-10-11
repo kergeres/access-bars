@@ -1,6 +1,5 @@
 import { Typography } from '@mui/material'
 import React from 'react'
-import classes from './Landing.css'
 
 const Landing = () => {
 

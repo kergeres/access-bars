@@ -1,5 +1,4 @@
-import React, { Fragment } from "react";
-import classes from "./Prices.css";
+import React from "react";
 
 const Prices = () => {
   return (
