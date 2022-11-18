@@ -1,8 +1,7 @@
-
 .infoContainer {
-    /* background-color: aqua; */
-    margin-block: 100px;
+  /* background-color: aqua; */
+  margin-block: 100px;
 }
 .infoContainer p {
-    line-height: 24px;
+  line-height: 24px;
 }

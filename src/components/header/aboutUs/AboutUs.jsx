@@ -28,7 +28,7 @@ const AboutUs = () => {
               left: "50%",
               translate: "-50%",
               position: "relative",
-              maxWidth: "65%",
+              maxWidth: "85%",
             }}
             src={require("../../../img/main/access bars tartás.png")}
           />
@@ -40,10 +40,11 @@ const AboutUs = () => {
             tárulnak majd elénk. Az eddig domináló hitrendszereket félre tudjuk
             majd tenni, ezzel pedig javulni fog a közérzetünk. A negatív érzések
             és gondolatok kikerülnek az életünkből, ennek következtében pedig
-            lehetőség nyílik egy sokkal tudatosabb létforma kialakítására. A
-            kezelést egy kisebb konzultáció előzi meg, hogy a kezelő tudja,
-            melyik pontokra kell fókuszálni, honnan kell a legtöbb blokkot
-            kioldani. Az eredmény pedig egy sokkal kiegyensúlyozottabb,
+            lehetőség nyílik egy sokkal tudatosabb létforma kialakítására.
+            <br></br>
+            <br></br> A kezelést egy kisebb konzultáció előzi meg, hogy a kezelő
+            tudja, melyik pontokra kell fókuszálni, honnan kell a legtöbb
+            blokkot kioldani. Az eredmény pedig egy sokkal kiegyensúlyozottabb,
             stresszmentesebb élet lesz, hiszen lehetőséget kaphatunk arra, hogy
             egy teljesen új perspektívából szemlélődhessünk. Az Access Bars
             kezelés egy kiváló alkalom ahhoz, hogy közelebb kerüljünk egy
@@ -70,19 +71,20 @@ const AboutUs = () => {
           <hr></hr>
 
           <p>
-            A kezelés előtti konzultáció nagyjából 20 percet vesz igénybe,
-            ezalatt a kezelő felméri, pontosan mire is van szükség. Az alkalom
-            további része vízszintes pozícióban zajlik, nagyjából egy órát vesz
-            igénybe. Ezalatt a kezelő a Bars pontokat stimulálja, többnyire a
-            fejen, de alkalmanként a karokon és a lábakon is, egy-egy pontot
-            megközelítőleg 10-15 percig, utána megy tovább. Mindez a lehető
-            legnyugodtabb környezetben történik, a háttérben zene szól, igény
-            szerint füstölő is használható. Eközben a kezelt teljesen
-            megnyugszik, meditatív állapotba kerül, sőt van olyan is, aki
-            elalszik, még más inkább beszélgetne közben, mindenre van lehetőség.
+            Az Access Bars kezelés általában egy pihentető, feltöltő folyamat,
+            ami alatt kellemesen ellazulsz.<br></br>A kezelés előtti konzultáció
+            nagyjából 20 percet vesz igénybe, ezalatt a kezelő felméri, pontosan
+            mire is van szükség. Az alkalom további része vízszintes pozícióban
+            zajlik, nagyjából egy órát vesz igénybe. Ezalatt a kezelő a Bars
+            pontokat stimulálja, többnyire a fejen, de alkalmanként a karokon és
+            a lábakon is, egy-egy pontot megközelítőleg 10-15 percig, utána megy
+            tovább. Mindez a lehető legnyugodtabb környezetben történik, a
+            háttérben zene szól, igény szerint füstölő is használható. Eközben a
+            kezelt teljesen megnyugszik, meditatív állapotba kerül, sőt van
+            olyan is, aki elalszik, még más inkább beszélgetne közben.
             Természetesen bármikor megszakítható a folyamat, nem kötelező
-            kihasználni az egy órát, a lényeg, hogy jól érezzük magunkat,
-            mindenki saját igénye szerint.
+            kihasználni az egy órát, a lényeg, hogy jól érezd magad, mindenki
+            saját igénye szerint.
           </p>
           <img
             alt="access bars kezelés"
@@ -91,7 +93,7 @@ const AboutUs = () => {
               left: "50%",
               translate: "-50%",
               position: "relative",
-              maxWidth: "65%",
+              maxWidth: "85%",
             }}
             src={require("../../../img/main/access bars kezeles.jpg")}
           />
@@ -124,16 +126,16 @@ const AboutUs = () => {
             könnyen kialakulhat szorongás, illetve depresszió, ami később
             különböző betegségekhez vezethet. Ezek elkerülésére, illetve
             amennyiben kialakult hasonló helyzet, akkor kezelésére, kiváló
-            segítséget nyújt az Access Bars kezelés. A fiatalok, akárcsak a
-            felnőttek, lehetőséget kapnak egy kis időre megnyugodni, aminek
-            köszönhetően később is sokkal kiegyensúlyozottabbak lesznek. A
-            gondolataik lecsillapodása után könnyebben tudnak majd koncentrálni,
-            ami a mai világban különösen nagy nehézséget jelent. Ez nem csak a
-            tanulás kapcsán fontos, hiszen a fiatalok életében különösen nagy
-            szerepet játszik az önkifejezés, kreativitásukat ilyenkor tudják a
-            leginkább kibontakoztatni. A kezelések alatt a gyerekek megtanulnak
-            befelé figyelni, elengedni magukat, ezzel pedig a hétköznapjaik is
-            sokkal nyugodtabbá válnak.
+            segítséget nyújt az Access Bars kezelés. <br></br>
+            <br></br>A fiatalok, akárcsak a felnőttek, lehetőséget kapnak egy
+            kis időre megnyugodni, aminek köszönhetően később is sokkal
+            kiegyensúlyozottabbak lesznek. A gondolataik lecsillapodása után
+            könnyebben tudnak majd koncentrálni, ami a mai világban különösen
+            nagy nehézséget jelent. Ez nem csak a tanulás kapcsán fontos, hiszen
+            a fiatalok életében különösen nagy szerepet játszik az önkifejezés,
+            kreativitásukat ilyenkor tudják a leginkább kibontakoztatni. A
+            kezelések alatt a gyerekek megtanulnak befelé figyelni, elengedni
+            magukat, ezzel pedig a hétköznapjaik is sokkal nyugodtabbá válnak.
           </p>
           <img
             alt="access bars kezelés"
@@ -142,7 +144,7 @@ const AboutUs = () => {
               left: "50%",
               translate: "-50%",
               position: "relative",
-              maxWidth: "65%",
+              maxWidth: "85%",
             }}
             src={require("../../../img/main/access bars gyermek kezeles.png")}
           />

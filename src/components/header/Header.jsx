@@ -99,8 +99,12 @@ function DrawerAppBar(props) {
           <Box sx={{ display: { xs: "none", sm: "block" } }} id="logo">
             <a href="#landing">
               <img
-                alt="acces bars Dunakeszi"
-                style={{ height: "80px", padding: "10px" }}
+                alt="access bars Dunakeszi"
+                style={{
+                  height: "80px",
+                  padding: "10px",
+                  paddingLeft: "30px",
+                }}
                 className="logo"
                 src={require("../../img/logo.png")}
               />

@@ -23,6 +23,7 @@ table {
   align-self: center;
   margin-right: 20px;
   text-align: end;
+  line-height: 16px;
 }
 table td:hover {
   text-decoration: underline;
@@ -51,7 +52,6 @@ table td:hover {
   }
   table {
     text-align: center;
-    line-height: 30px;
   }
   .twoDivB {
     width: 100%;

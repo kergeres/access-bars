@@ -7,13 +7,32 @@
   filter: grayscale(60%);
   opacity: 0.5;
 }
+
 .landingContainer {
   position: absolute;
-  top: 50%;
+  top: 28%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  translate: -50% 0;
+  text-align: center;
+}
+.landingContainer h1 {
+  line-height: 80px !important;
+  white-space: nowrap;
 }
 
+@media screen and (max-width: 480px) {
+  .landingContainer {
+    top: 15%;
+    left: 50%;
+  }
+  .landingContainer div {
+    text-align: start !important;
+  }
+  .landingContainer h1 {
+    font-size: 80px;
+    white-space: unset;
+  }
+}
 @keyframes landBgChanger {
   0% {
     background-image: url("../../../img/landing-img/nature-bg1.jpg");
