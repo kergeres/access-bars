@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c10467d5.css",
-    "main.js": "/static/js/main.b8ef5b3b.js",
+    "main.css": "/static/css/main.659a295d.css",
+    "main.js": "/static/js/main.da6650e9.js",
     "static/js/787.a6dd38d8.chunk.js": "/static/js/787.a6dd38d8.chunk.js",
     "static/media/nature-bg1.jpg": "/static/media/nature-bg1.c89bc1a98cac62a2e665.jpg",
     "static/media/access bars gyermek kezeles.png": "/static/media/access bars gyermek kezeles.0f5705e9a0b2708acd9a.png",
@@ -10,14 +10,15 @@
     "static/media/access bars kezeles.jpg": "/static/media/access bars kezeles.5f5cc44c7f8a8daf318a.jpg",
     "static/media/access bars pontok.png": "/static/media/access bars pontok.d2dac1d79ae4582f6c51.png",
     "static/media/access bars tartás.png": "/static/media/access bars tartás.d3609ce203a48a209f17.png",
-    "static/media/logo.png": "/static/media/logo.53144731e48afd804db6.png",
+    "static/media/dark logo text.png": "/static/media/dark logo text.d9912d4e128271cd8f68.png",
+    "static/media/dark logo no text.png": "/static/media/dark logo no text.a7dab682f4f9d59507e5.png",
     "index.html": "/index.html",
-    "main.c10467d5.css.map": "/static/css/main.c10467d5.css.map",
-    "main.b8ef5b3b.js.map": "/static/js/main.b8ef5b3b.js.map",
+    "main.659a295d.css.map": "/static/css/main.659a295d.css.map",
+    "main.da6650e9.js.map": "/static/js/main.da6650e9.js.map",
     "787.a6dd38d8.chunk.js.map": "/static/js/787.a6dd38d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c10467d5.css",
-    "static/js/main.b8ef5b3b.js"
+    "static/css/main.659a295d.css",
+    "static/js/main.da6650e9.js"
   ]
 }
