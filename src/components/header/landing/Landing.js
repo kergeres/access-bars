@@ -13,12 +13,12 @@ const Landing = () => {
             <div className="landingContainer">
                 <div>
                     <Typography sx={{ color: '#343434', fontWeight: 600 }} variant='h1' >Access Bars</Typography>
-                    <Typography sx={{ color: '#646464', fontWeight: 600 }} variant='h1' >Dunakeszi</Typography>
+                    <Typography sx={{ color: '#646464', fontWeight: 600, fontSize: '4rem', textTransform: 'uppercase' }} variant='h1' >Dunakeszi</Typography>
                 </div>
                 <Box
                     component="img"
                     sx={{ height: '150px', mt: { xs: '130px', sm: '40px' } }}
-                    src={require("../../../img/logo.png")}
+                    src={require("../../../img/dark logo no text.png")}
                 ></Box>
             </div>
 

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -31,12 +31,39 @@ const navItemStyl = {
 };
 
 function DrawerAppBar(props) {
-  const { window } = props;
+  const { Window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-
+  const [isShrunk, setShrunk] = useState(false);
+  const transitionSpeed = "0.6s";
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+
+  useEffect(() => {
+    const handler = () => {
+      setShrunk((isShrunk) => {
+        if (
+          !isShrunk &&
+          (document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20)
+        ) {
+          return true;
+        }
+
+        if (
+          isShrunk &&
+          document.body.scrollTop < 4 &&
+          document.documentElement.scrollTop < 4
+        ) {
+          return false;
+        }
+        return isShrunk;
+      });
+    };
+
+    window.addEventListener("scroll", handler);
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -48,7 +75,7 @@ function DrawerAppBar(props) {
               <ListItem key={item} disablePadding>
                 <ListItemButton sx={{ textAlign: "center" }}>
                   <ListItemText
-                    sx={{ fontFamily: "Karla", textTransform: "lowercase" }}
+                    sx={{ fontFamily: "roboto", textTransform: "lowercase" }}
                     primary={item}
                   />
                 </ListItemButton>
@@ -59,7 +86,7 @@ function DrawerAppBar(props) {
       </List>
       <Box id="logo">
         <img
-          alt="acces bars Dunakeszi"
+          alt="Access Bars Dunakeszi"
           style={{
             width: "50%",
             padding: "10px",
@@ -68,20 +95,22 @@ function DrawerAppBar(props) {
             right: "50%",
             transform: "translatex(50%)",
           }}
-          src={require("../../img/logo.png")}
+          src={require("../../img/dark logo text.png")}
         />
       </Box>
     </Box>
   );
 
   const container =
-    window !== undefined ? () => window().document.body : undefined;
+    Window !== undefined ? () => Window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex", backgroundColor: "red" }}>
+    <Box sx={{ display: "flex" }}>
       <AppBar
         sx={{
           backgroundColor: { xs: "transparent", sm: "#fcf1de" },
+          height: isShrunk ? "70px" : "105px",
+          transition: "0.6s",
           boxShadow: { xs: "none", sm: "0px 2px 4px -1px rgb(0 0 0 / 20%)" },
         }}
         component="nav"
@@ -101,12 +130,13 @@ function DrawerAppBar(props) {
               <img
                 alt="access bars Dunakeszi"
                 style={{
-                  height: "80px",
+                  height: isShrunk ? "60px" : "80px",
                   padding: "10px",
+                  transition: transitionSpeed,
                   paddingLeft: "30px",
                 }}
                 className="logo"
-                src={require("../../img/logo.png")}
+                src={require("../../img/dark logo text.png")}
               />
             </a>
           </Box>
@@ -165,7 +195,7 @@ DrawerAppBar.propTypes = {
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
    */
-  window: PropTypes.func,
+  Window: PropTypes.func,
 };
 
 export default DrawerAppBar;

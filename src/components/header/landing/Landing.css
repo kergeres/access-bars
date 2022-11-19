@@ -2,10 +2,10 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
-  /* animation: landBgChanger 100s infinite; */
+  animation: landBgChanger 100s infinite;
   background-image: url("../../../img/landing-img/nature-bg1.jpg");
   filter: grayscale(60%);
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .landingContainer {
@@ -16,7 +16,7 @@
   text-align: center;
 }
 .landingContainer h1 {
-  line-height: 80px !important;
+  line-height: 70px !important;
   white-space: nowrap;
 }
 
@@ -29,8 +29,11 @@
     text-align: start !important;
   }
   .landingContainer h1 {
-    font-size: 80px;
     white-space: unset;
+    font-size: 80px;
+  }
+  .landingContainer h1:last-child {
+    font-size: 60px;
   }
 }
 @keyframes landBgChanger {
